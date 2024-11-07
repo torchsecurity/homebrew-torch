@@ -10,7 +10,7 @@ class Torch < Formula
   on_macos do
     on_intel do
       url "https://github.com/torchsecurity/torch-secret-analyzer/releases/download/v0.1.0/torch_0.1.0_darwin_amd64.tar.gz"
-      sha256 "298c2b4cd31c83453e9584e807842de8cd170416796677f6f4e0d3ca55dfcc78"
+      sha256 "86f32ca8b93d38d7806c601d3c605c9bf9e4fcfe9a5bab1f44306a1c8fa9e041"
 
       def install
         bin.install "torch"
@@ -18,7 +18,7 @@ class Torch < Formula
     end
     on_arm do
       url "https://github.com/torchsecurity/torch-secret-analyzer/releases/download/v0.1.0/torch_0.1.0_darwin_arm64.tar.gz"
-      sha256 "576569fe14ccbb065bb17bf8299ce7be78b261fa665a101817de9af4ffd6b847"
+      sha256 "1ab3511ec6c499d52d36d96156071dfcd3552fb85b6172dfa583a8f6013ae52d"
 
       def install
         bin.install "torch"
@@ -30,7 +30,7 @@ class Torch < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/torchsecurity/torch-secret-analyzer/releases/download/v0.1.0/torch_0.1.0_linux_amd64.tar.gz"
-        sha256 "74366153b791f6528b649ec97a7a990da28483345cc00affb4f46dc5c073641a"
+        sha256 "11b6b4a690438c94d592fcb8c337c6942deb74d809bc04f329a19644d0ed61c6"
 
         def install
           bin.install "torch"
@@ -40,7 +40,7 @@ class Torch < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/torchsecurity/torch-secret-analyzer/releases/download/v0.1.0/torch_0.1.0_linux_arm64.tar.gz"
-        sha256 "626785cfe3f43cdeeda3eda96e9c0c0563e860232d7e42b4a60955dd0b492766"
+        sha256 "08738157f973e5e5b7e9804aea36ac5fe76d0a1398735aa8bed2e4e4df8d2dbf"
 
         def install
           bin.install "torch"

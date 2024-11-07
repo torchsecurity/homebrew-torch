@@ -5,20 +5,20 @@
 class Torch < Formula
   desc "Keep your secrets safe"
   homepage "https://github.com/torchsecurity/torch-secret-analyzer"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     on_intel do
-      url "https://github.com/torchsecurity/torch-secret-analyzer/releases/download/v0.1.2/torch_0.1.2_darwin_amd64.tar.gz"
-      sha256 "f721b8efe2894f9d42ebf4638819bce9619ac03319d2cb43cbe294df057ec813"
+      url "https://github.com/torchsecurity/torch-secret-analyzer/releases/download/v0.1.3/torch_0.1.3_darwin_amd64.tar.gz"
+      sha256 "f304af923a32c3d9c51f7e55191a65def0196940a536d446526b31dd34bd619b"
 
       def install
         bin.install "torch"
       end
     end
     on_arm do
-      url "https://github.com/torchsecurity/torch-secret-analyzer/releases/download/v0.1.2/torch_0.1.2_darwin_arm64.tar.gz"
-      sha256 "a3585cc9659b5b51ef6fdd77647a1fcc078b99ff80b204ccd91b4ca8b37aef6f"
+      url "https://github.com/torchsecurity/torch-secret-analyzer/releases/download/v0.1.3/torch_0.1.3_darwin_arm64.tar.gz"
+      sha256 "5d5462f83800ce66b3bd8b794741004a6efe2d074e3444740f7656333ca81913"
 
       def install
         bin.install "torch"
@@ -29,8 +29,8 @@ class Torch < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/torchsecurity/torch-secret-analyzer/releases/download/v0.1.2/torch_0.1.2_linux_amd64.tar.gz"
-        sha256 "bfaa59e71edf53c8662a21aea87cb542422b7d46482f85f1a661be6bd3474fcc"
+        url "https://github.com/torchsecurity/torch-secret-analyzer/releases/download/v0.1.3/torch_0.1.3_linux_amd64.tar.gz"
+        sha256 "eab76ab2643c26d2fc7e9126b80c4df085b50168a2ce073254652dbe3803f59e"
 
         def install
           bin.install "torch"
@@ -39,8 +39,8 @@ class Torch < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/torchsecurity/torch-secret-analyzer/releases/download/v0.1.2/torch_0.1.2_linux_arm64.tar.gz"
-        sha256 "e385570afd8eac9e0976416608afc02ee32f7b51c8fd97db76381d058e2bb9f2"
+        url "https://github.com/torchsecurity/torch-secret-analyzer/releases/download/v0.1.3/torch_0.1.3_linux_arm64.tar.gz"
+        sha256 "ae42ac62d01cd85aca4b943802852ca8d954846afbd392088bb8f8e20e4892c5"
 
         def install
           bin.install "torch"
